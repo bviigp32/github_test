@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/members
+
+### 
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+  "id": 11,
+  "name": "Zake",
+  "team": "Engineering",
+  "position": "Android Developer",
+  "emailAddress": "zz@zz",
+  "phoneNumber": "010-1111-1111",
+  "admissionDate": "2021/2/2",
+  "birthday": "1111/1111/1111",
+  "profileImage": "profile11.png"
+}
+
+###
+GET http://localhost:3000/api/members
+
+###
+GET http://localhost:3000/api/members?team=engineering
+
+###
+GET http://localhost:3000/api/members?team=sales
+
+###
+GET http://localhost:3000/api/members?team=marketing
